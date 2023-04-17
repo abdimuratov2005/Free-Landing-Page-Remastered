@@ -13,15 +13,6 @@ export const HeaderSect = styled.header `
 `
 export const HeaderContainer = styled.header `
 `
-export const CloseBurgerIcon = styled.div `
-    width: 100%;
-    display: none;
-    justify-content: flex-end;
-    & svg {
-        width: 60px;
-        height: 60px;
-    }
-`
 export const NavbarList = styled.ul `
     display: flex;
     justify-content: space-between;

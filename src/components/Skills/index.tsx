@@ -13,7 +13,7 @@ import { ProgramsType } from "./types/ProgramsType";
 const Skills = () => {
   return (
     <>
-      <SkillsSect>
+      <SkillsSect id="#skills">
         <SkillsTitle>Skills</SkillsTitle>
         <SkillsSubTitle>I work in such programs as</SkillsSubTitle>
         <SkillsPrograms>

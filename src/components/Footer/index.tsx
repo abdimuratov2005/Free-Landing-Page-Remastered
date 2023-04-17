@@ -24,6 +24,7 @@ const Footer = () => {
                         <FooterSocItem key={icon.id}>
                             <FooterSocLink>
                                 <img
+                                    loading="lazy"
                                     src={icon.src} 
                                     alt={icon.alt} 
                                 />

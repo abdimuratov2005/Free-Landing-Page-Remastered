@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Language from './components/Language';
-import { CloseBurgerIcon, HeaderSect, HeaderContainer } from './styles/styles';
+import { HeaderSect, HeaderContainer } from './styles/styles';
 
 const Header = () => {
     return (
@@ -9,7 +9,6 @@ const Header = () => {
                 <HeaderContainer>
                     <div className="navbar_body">
                         <nav className="navbar">
-                            <CloseBurgerIcon />
                             <Navbar />
                             <Language/>
                         </nav>

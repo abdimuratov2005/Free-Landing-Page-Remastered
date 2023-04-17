@@ -8,7 +8,7 @@ import {
 const About = () => {
   return (
     <>
-      <AboutSect>
+      <AboutSect id="#about">
         <AboutContainer>
           <AboutTitle>About me</AboutTitle>
           <AboutText>

@@ -13,7 +13,7 @@ const Portfolio = () => {
           {
             projectList.map((project: ProjectType) => (
               <div key={project.id}>
-                <PortfolioImg src={project.imgSrc} />
+                <PortfolioImg loading='lazy' src={project.imgSrc} alt="Project"/>
                 <PortfolioName>
                   {project.name}
                 </PortfolioName>

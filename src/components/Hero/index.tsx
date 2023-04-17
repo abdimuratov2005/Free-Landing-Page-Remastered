@@ -19,11 +19,10 @@ const Hero = () => {
                     <HeroTitleName>Denis<br />Novik</HeroTitleName>
                     <HeroTitleSkill>UX | UI designer<br />24 years old, Minsk</HeroTitleSkill>
                     <Language/>
-                    <HeroBurger src={menu_icon}></HeroBurger>
                 </HeroTitle>
                 <HeroImg>
-                    <HeroImg1440 loading='lazy' src={hero_1445} />
-                    <HeroImg768 loading='lazy' src={hero_768} />
+                    <HeroImg1440 loading='lazy' src={hero_1445} alt='Hero Image'/>
+                    <HeroImg768 loading='lazy' src={hero_768} alt='Hero Image'/>
                 </HeroImg>
             </HeroWrapper>
         </>
