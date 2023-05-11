@@ -21,15 +21,6 @@ export const PortfolioTitle = styled.h1`
     margin: 0;
   }
 `;
-export const PortfolioImg = styled.img`
-  margin: 40px 0;
-  @media (max-width: 991.98px) {
-    width: 100%;
-  }
-  @media (max-width:767.98px) {
-    margin: 20px 0;
-  }
-`;
 export const PortfolioName = styled.h3`
   text-decoration: underline;
   font-size: 18px;
@@ -39,4 +30,13 @@ export const PortfolioList = styled.ul`
   justify-content: center;
   flex-direction: column;
   padding: 0;
+  img {
+    margin: 40px 0;
+    @media (max-width: 991.98px) {
+      width: 100%;
+    }
+    @media (max-width:767.98px) {
+      margin: 20px 0;
+    }
+  }
 `;

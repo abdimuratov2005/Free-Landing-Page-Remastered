@@ -57,11 +57,11 @@ export const Program = styled.div`
     flex: 0 0 30%;
     margin: 10px 70px 0 0;
   }
-`;
-export const SkillsProgramsIcon = styled.img`
-  margin-bottom: 24px;
-  @media (max-width: 767.98px) {
-    margin-bottom: 15px;
+  & > img:first-child {
+    margin-bottom: 24px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 15px;
+    }
   }
 `;
 export const SkillsProgramsName = styled.p`
@@ -72,4 +72,3 @@ export const SkillsProgramsName = styled.p`
     margin-bottom: 20px;
   }
 `;
-export const SkillsProgramsRate = styled.img``;

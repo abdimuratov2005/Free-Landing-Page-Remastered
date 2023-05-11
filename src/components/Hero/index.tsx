@@ -1,16 +1,12 @@
-import hero_768 from './assets/hero-768.webp';
-import hero_1445 from './assets/hero-1445.webp';
-import menu_icon from './assets/menu-icon.svg';
-import { HeroWrapper,
+import { 
+    HeroWrapper,
     HeroTitle,
     HeroTitleName, 
     HeroTitleSkill,
-    HeroBurger,
-    HeroImg,
-    HeroImg1440,
-    HeroImg768
+    HeroImg
 } from './styles/styles';
 import Language from './components/Language';
+import ImgLoader from '../../app/ui/ImgLoader';
 const Hero = () => {
     return (
         <>
@@ -21,8 +17,13 @@ const Hero = () => {
                     <Language/>
                 </HeroTitle>
                 <HeroImg>
-                    <HeroImg1440 loading='lazy' src={hero_1445} alt='Hero Image'/>
-                    <HeroImg768 loading='lazy' src={hero_768} alt='Hero Image'/>
+                {
+                    window.innerWidth <= 768
+                        ?
+                    <ImgLoader img='hero_768'/>
+                        :
+                    <ImgLoader img='hero_1445'/>
+                }
                 </HeroImg>
             </HeroWrapper>
         </>

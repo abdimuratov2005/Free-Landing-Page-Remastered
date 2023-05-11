@@ -1,24 +1,32 @@
 import { NavbarList, NavbarLink  } from '../styles/styles'
 
+interface INavbarItems {
+  id: number;
+  value: string
+}
+
+const navbarItems:INavbarItems[] = [
+  { id: 1, value: 'Home' },
+  { id: 2, value: 'About me' },
+  { id: 3, value: 'Skills' },
+  { id: 4, value: 'Portfolio' },
+  { id: 5, value: 'Contacts' }
+]
+
 const Navbar = () => {
+
+  
+
   return (
     <>
       <NavbarList>
-        <li className="nav_item">
-          <NavbarLink href='#home'>Home</NavbarLink>
-        </li>
-        <li className="nav_item">
-          <NavbarLink href='#about'>About me</NavbarLink>
-        </li>
-        <li className="nav_item">
-          <NavbarLink href='#skills'>Skills</NavbarLink>
-        </li>
-        <li className="nav_item">
-          <NavbarLink href='#portfolio'>Portfolio</NavbarLink>
-        </li>
-        <li className="nav_item">
-          <NavbarLink href='#contacts'>Contacts</NavbarLink>
-        </li>
+        { navbarItems.map((nav_item: INavbarItems) => (
+          <li className="nav_item" key={nav_item.id}>
+            <NavbarLink href='#'>
+              {nav_item.value}
+            </NavbarLink>
+         </li>
+        ))}
       </NavbarList>
     </>
   );

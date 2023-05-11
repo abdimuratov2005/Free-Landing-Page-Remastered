@@ -1,6 +1,5 @@
-import footerIcons from "./components/SocIcons";
+import footerIcons, { ISocIcons } from "./components/SocIcons";
 import { FooterContainer, FooterLikeMe, FooterLink, FooterLinkBtn, FooterSect, FooterSocItem, FooterSocLink, FooterSocList, FooterSubTitle, FooterTitle } from "./styles/styles";
-import { SocIconsType } from "./types/SocIconsTypes";
 
 const Footer = () => {
     
@@ -20,14 +19,10 @@ const Footer = () => {
                     </FooterLinkBtn>
                 </FooterLink>
                 <FooterSocList>
-                    { footerIcons.map((icon: SocIconsType) => (
+                    { footerIcons.map((icon: ISocIcons) => (
                         <FooterSocItem key={icon.id}>
                             <FooterSocLink>
-                                <img
-                                    loading="lazy"
-                                    src={icon.src} 
-                                    alt={icon.alt} 
-                                />
+                                {icon.src}
                             </FooterSocLink>
                         </FooterSocItem>
                     ))}

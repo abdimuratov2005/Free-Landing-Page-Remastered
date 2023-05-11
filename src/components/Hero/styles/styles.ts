@@ -60,15 +60,3 @@ export const HeroImg = styled.div`
     }
   }
 `;
-export const HeroImg768 = styled.img`
-  display: none;
-  @media (max-width: 767.98px) {
-    display: block;
-  }
-`;
-export const HeroImg1440 = styled.img`
-  display: none;
-  @media (min-width: 767.98px) {
-    display: block;
-  }
-`;
