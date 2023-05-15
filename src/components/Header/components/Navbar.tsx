@@ -15,8 +15,6 @@ const navbarItems:INavbarItems[] = [
 
 const Navbar = () => {
 
-  
-
   return (
     <>
       <NavbarList>
