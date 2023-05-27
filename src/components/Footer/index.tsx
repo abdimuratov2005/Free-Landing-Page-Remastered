@@ -1,3 +1,4 @@
+import ImgLoader from "../../app/ui/ImgLoader";
 import footerIcons, { ISocIcons } from "./components/SocIcons";
 import { FooterContainer, FooterLikeMe, FooterLink, FooterLinkBtn, FooterSect, FooterSocItem, FooterSocLink, FooterSocList, FooterSubTitle, FooterTitle } from "./styles/styles";
 
@@ -22,7 +23,7 @@ const Footer = () => {
                     { footerIcons.map((icon: ISocIcons) => (
                         <FooterSocItem key={icon.id}>
                             <FooterSocLink>
-                                {icon.src}
+                                <ImgLoader img={icon.src}/>
                             </FooterSocLink>
                         </FooterSocItem>
                     ))}

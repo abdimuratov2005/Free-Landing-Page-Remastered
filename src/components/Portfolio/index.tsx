@@ -1,3 +1,4 @@
+import ImgLoader from "../../app/ui/ImgLoader";
 import projectList, { IProjectsList } from "./components/ProjectList";
 import { PortfolioSect, PortfolioTitle, PortfolioName, PortfolioList } from "./styles/styles";
 
@@ -12,7 +13,7 @@ const Portfolio = () => {
           {
             projectList.map((project: IProjectsList) => (
               <div key={project.id}>
-                { project.img }
+                <ImgLoader img={project.img} />
                 <PortfolioName>
                   { project.name }
                 </PortfolioName>

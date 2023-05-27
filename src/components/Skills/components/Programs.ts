@@ -1,5 +1,3 @@
-import ImgLoader from "../../../app/ui/ImgLoader";
-
 export interface IPrograms {
     id: number;
     iconSrc: any;
@@ -10,27 +8,27 @@ export interface IPrograms {
 const skillsPrograms: IPrograms[] = [
     {
         id: 1,
-        iconSrc: ImgLoader({img: 'skill_1'}),
+        iconSrc: 'skill_1',
         name: `Adobe Photoshop`,
-        rateSrc: ImgLoader({img: 'rate_1'}),
+        rateSrc: 'rate_1',
     },
     {
         id: 2,
-        iconSrc: ImgLoader({img: 'skill_2'}),
+        iconSrc: 'skill_2',
         name: `Adobe Illustrator`,
-        rateSrc: ImgLoader({img: 'rate_2'}),
+        rateSrc: 'rate_2',
     },
     {
         id: 3,
-        iconSrc: ImgLoader({img: 'skill_3'}),
+        iconSrc: 'skill_3',
         name: `Adobe After Effects`,
-        rateSrc: ImgLoader({img: 'rate_1'}),
+        rateSrc: 'rate_1',
     },
     {
         id: 4,
-        iconSrc: ImgLoader({img: 'skill_4'}),
+        iconSrc: 'skill_4',
         name: `Figma`,
-        rateSrc: ImgLoader({img: 'rate_2'}),
+        rateSrc: 'rate_2',
     },
 ];
 

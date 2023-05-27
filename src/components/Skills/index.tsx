@@ -7,6 +7,7 @@ import {
   SkillsTitle,
 } from "./styles/styles";
 import skillsPrograms, { IPrograms } from "./components/Programs";
+import ImgLoader from "../../app/ui/ImgLoader";
 const Skills = () => {
   return (
     <>
@@ -17,9 +18,9 @@ const Skills = () => {
           {
             skillsPrograms.map((program: IPrograms) => (
               <Program key={program.id}>
-                  {program.iconSrc}
+                  <ImgLoader img={program.iconSrc}/>
                   <SkillsProgramsName>{program.name}</SkillsProgramsName>
-                  {program.rateSrc}
+                  <ImgLoader img={program.rateSrc}/>
               </Program>
             ))
           }
